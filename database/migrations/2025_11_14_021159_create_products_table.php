@@ -17,7 +17,7 @@ return new class extends Migration
                 -> constrained('categories')
                 ->onDelete('cascade');
             $table->string('name');
-            $table->string('price');
+            $table->integer('price');
             $table->text('description')->nullable();
 
             $table->timestamps();
