@@ -12,7 +12,7 @@ class ProductForm
         return $schema
             ->components([
                 //
-                Forms\Components\TextINput::make('name')
+                Forms\Components\TextInput::make('name')
                 ->label('Product Name')
                 ->required()
                 ->maxLength(255),
@@ -27,7 +27,7 @@ class ProductForm
                 ->native(false)
                 ->required(),
 
-                Forms\Components\TextINput::make('price')
+                Forms\Components\TextInput::make('price')
                 ->numeric()
                 ->required(),
 
