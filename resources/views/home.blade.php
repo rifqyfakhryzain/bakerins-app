@@ -2,53 +2,68 @@
 
 @section('content')
 
-<!-- ✅ HERO MODERN -->
-<section class="bg-gradient-to-br from-orange-50 to-white">
-  <div class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-14 items-center">
+<!-- Section -->
+<section class="bg-gradient-to-br from-orange-50 to-white w-full min-h-screen">
+  <div class="w-full">
+    <div class="max-w-7xl mx-auto px-6 md:px-20 py-24 grid md:grid-cols-2 gap-14 items-center">
 
-    <!-- Text -->
-    <div>
-      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-        Roti Fresh Setiap Hari  
-        <span class="text-orange-600 block">Langsung ke Rumahmu</span>
-      </h1>
+      <!-- TEXT -->
+      <div>
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+          Roti Fresh Setiap Hari  
+          <span class="text-orange-600 block">Langsung ke Rumahmu</span>
+        </h1>
 
-      <p class="text-gray-600 text-lg mb-8">
-        Bakerins menghadirkan roti fresh dari oven setiap hari, 
-        dibuat tanpa pengawet, dan langsung dikirim ke rumahmu.
-      </p>
+        <p class="text-gray-600 text-lg mb-8">
+          Bakerins menghadirkan roti fresh dari oven setiap hari, 
+          dibuat tanpa pengawet, dan langsung dikirim ke rumahmu.
+        </p>
 
-      <div class="flex gap-4">
-        <a href="/products"
-           class="bg-orange-500 text-white px-8 py-4 rounded-full shadow hover:bg-orange-600 transition">
-           Belanja Sekarang
-        </a>
+        <!-- Tombol -->
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+          <a href="/products"
+             class="bg-orange-500 text-white px-8 py-4 rounded-full shadow 
+                    hover:bg-orange-600 transition active:scale-95
+                    w-full sm:w-auto text-center font-semibold text-base">
+             Belanja Sekarang
+          </a>
 
-        <a href="#unggulan"
-           class="border border-orange-500 text-orange-600 px-8 py-4 rounded-full hover:bg-orange-50 transition">
-           Lihat Keunggulan
-        </a>
+          <a href="#unggulan"
+             class="border border-orange-500 text-orange-600 px-8 py-4 rounded-full 
+                    hover:bg-orange-50 transition
+                    w-full sm:w-auto text-center font-semibold text-base">
+             Lihat Keunggulan
+          </a>
+        </div>
+
+        <div class="flex flex-wrap gap-6 mt-10 text-sm text-gray-500">
+          <span>✅ Fresh Harian</span>
+          <span>✅ Tanpa Pengawet</span>
+          <span>✅ Pengiriman Cepat</span>
+        </div>
       </div>
 
-      <div class="flex gap-6 mt-10 text-sm text-gray-500">
-        <span>✅ Fresh Harian</span>
-        <span>✅ Tanpa Pengawet</span>
-        <span>✅ Pengiriman Cepat</span>
+      <!-- Image -->
+      <div class="relative">
+<img 
+  src="/images/bakerins.webp"
+  width="720"
+  height="480"
+class="rounded-3xl shadow-none md:shadow-xl w-full h-auto"
+  loading="eager"
+  fetchpriority="high"
+  decoding="async"
+  alt="Roti Bakerins"
+>
+
+
       </div>
-    </div>
 
-    <!-- Image -->
-    <div class="relative">
-      <img 
-        src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec" 
-        class="rounded-3xl shadow-2xl w-full"
-      >
     </div>
-
   </div>
 </section>
 
-<!-- ✅ KEUNGGULAN -->
+<!-- Keunggulan -->
 <section id="unggulan" class="py-24 bg-white">
   <div class="max-w-7xl mx-auto px-6">
 
@@ -86,8 +101,8 @@
   </div>
 </section>
 
-<!-- ✅ PRODUK UNGGULAN (SIAP API NANTI) -->
-<section class="py-24 bg-gray-50">
+<!-- Produk Unggulan -->
+<section class="py-24 bg-white">
   <div class="max-w-7xl mx-auto px-6">
 
     <div class="flex justify-between items-center mb-10">
@@ -122,8 +137,8 @@
   </div>
 </section>
 
-<!-- ✅ CTA MODERN -->
-<section class="py-24 bg-orange-500 text-white text-center">
+<!-- Mulai Belanja -->
+<section class="py-20 bg-orange-500 text-white text-center px-6 md:px-20">
   <h2 class="text-3xl md:text-4xl font-bold mb-6">
     Siap Nikmati Roti Terbaik Hari Ini?
   </h2>
@@ -138,7 +153,7 @@
   </a>
 </section>
 
-<!-- ✅ FOOTER PREMIUM -->
+<!-- Footer -->
 <footer class="bg-gray-900 text-gray-400 py-16">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
 

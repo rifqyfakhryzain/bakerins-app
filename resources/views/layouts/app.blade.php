@@ -5,12 +5,14 @@
     <title>Bakerins</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preload" as="image" href="/images/bakerins.webp">
+
     @vite('resources/css/app.css')
 </head>
 <body class="bg-white">
 
-<!-- ✅ NAVBAR MODERN -->
-<nav class="fixed top-0 w-full bg-white/90 backdrop-blur shadow z-50">
+<!-- Navbar -->
+<nav class="fixed top-0 w-full bg-white shadow z-50">
   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
     
     <!-- Logo -->
@@ -42,8 +44,8 @@
   </div>
 </nav>
 
-<!-- ✅ TEMPAT ISI HALAMAN (INI YANG KAMU LUPA TOTAL) -->
-<div class="pt-0">
+<!-- Isi Halaman -->
+<div class="pt-[88px]">
     @yield('content')
 </div>
 
