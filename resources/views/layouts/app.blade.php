@@ -3,34 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Bakerins</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     @vite('resources/css/app.css')
 </head>
-<body class="bg-gray-100">
+<body class="bg-white">
 
-<!-- ✅ NAVBAR RESPONSIVE -->
-<nav class="bg-white shadow px-4 md:px-10 py-4 flex items-center justify-between">
-    <h1 class="text-xl md:text-2xl font-bold text-orange-600">Bakerins</h1>
+<!-- ✅ NAVBAR MODERN -->
+<nav class="fixed top-0 w-full bg-white/90 backdrop-blur shadow z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <span class="text-2xl font-extrabold text-orange-600">Bakerins</span>
+    </div>
 
-    <!-- Desktop Menu -->
-    <div class="hidden md:flex space-x-6">
-        <a href="/" class="hover:text-orange-500">Home</a>
-        <a href="/products" class="hover:text-orange-500">Produk</a>
-        <a href="/login" class="hover:text-orange-500">Login</a>
+    <!-- Menu Desktop -->
+    <div class="hidden md:flex items-center gap-8 font-medium">
+      <a href="/" class="hover:text-orange-600">Home</a>
+      <a href="/products" class="hover:text-orange-600">Produk</a>
+      <a href="/login" class="hover:text-orange-600">Login</a>
+
+      <a href="/products" 
+         class="bg-orange-500 text-white px-5 py-2 rounded-full hover:bg-orange-600 transition">
+         Belanja
+      </a>
     </div>
 
     <!-- Mobile Button -->
     <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+    <a href="/" class="block px-6 py-4">Home</a>
+    <a href="/products" class="block px-6 py-4">Produk</a>
+    <a href="/login" class="block px-6 py-4">Login</a>
+  </div>
 </nav>
 
-<!-- ✅ MOBILE MENU -->
-<div id="mobileMenu" class="hidden bg-white shadow md:hidden">
-    <a href="/" class="block px-6 py-3 border-b">Home</a>
-    <a href="/products" class="block px-6 py-3 border-b">Produk</a>
-    <a href="/login" class="block px-6 py-3">Login</a>
-</div>
-
-<!-- ✅ KONTEN -->
-<div class="p-4 md:p-10">
+<!-- ✅ TEMPAT ISI HALAMAN (INI YANG KAMU LUPA TOTAL) -->
+<div class="pt-0">
     @yield('content')
 </div>
 
