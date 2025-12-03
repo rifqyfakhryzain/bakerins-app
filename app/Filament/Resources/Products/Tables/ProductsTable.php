@@ -7,6 +7,8 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Table;
 use Filament\Tables;
+use Filament\Tables\Columns\ImageColumn;
+
 
 class ProductsTable
 {
@@ -31,7 +33,15 @@ class ProductsTable
 
                 Tables\Columns\TextColumn::make('description')
                 ->label('Description')
-                ->limit(50)
+                ->limit(50),
+
+ImageColumn::make('image')
+    ->label('Image')
+    ->disk('public')
+    ->height(60)
+    ->square(),
+
+
             ])
             ->filters([
                 //
