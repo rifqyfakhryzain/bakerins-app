@@ -102,11 +102,7 @@ http://127.0.0.1:8000
 
 ## 📸 Screenshot Aplikasi
 
-### 🖥️ Landing Page (Desktop)
-![Landing Desktop](screenshots/landing-page.png)
 
-### 🖥️ Halaman Produk (Desktop)
-![Produk Desktop](screenshots/products.png)
 
 ---
 
