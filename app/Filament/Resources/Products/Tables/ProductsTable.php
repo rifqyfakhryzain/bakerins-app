@@ -18,28 +18,30 @@ class ProductsTable
             ->columns([
                 //
                 Tables\Columns\TextColumn::make('name')
-                ->label('Product Name')
-                ->searchable()
-                ->sortable(),
+                    ->label('Product Name')
+                    ->searchable()
+                    ->sortable(),
 
                 Tables\Columns\TextColumn::make('category.name')
-                ->label('Category')
-                ->sortable(),
+                    ->label('Category')
+                    ->sortable(),
 
                 Tables\Columns\TextColumn::make('price')
-                ->label('Price')
-                ->money('IDR')
-                ->sortable(),
+                    ->label('Price')
+                    ->money('IDR')
+                    ->sortable(),
 
                 Tables\Columns\TextColumn::make('description')
-                ->label('Description')
-                ->limit(50),
+                    ->label('Description')
+                    ->limit(50),
 
-ImageColumn::make('image')
-    ->label('Image')
-    ->disk('public')
-    ->height(60)
-    ->square(),
+                ImageColumn::make('image')
+                    ->label('Image')
+                    ->disk('public')
+                    ->visibility('public')
+                    ->height(60)
+                    ->square()
+
 
 
             ])

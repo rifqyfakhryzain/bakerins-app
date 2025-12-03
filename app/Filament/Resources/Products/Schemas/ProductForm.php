@@ -33,17 +33,17 @@ class ProductForm
                 Forms\Components\Textarea::make('description')
                     ->rows(3),
 
-FileUpload::make('image')
-    ->label('Product Image')
-    ->disk('public')
-    ->directory('products')
-    ->visibility('public')
-    ->image()
-    ->previewable(false)     // ✅ WAJIB
-    ->openable(false)        // ✅ WAJIB
-    ->downloadable(false)   // ✅ WAJIB
-    ->maxSize(2048)
-    ->required()
+                FileUpload::make('image')
+                    ->label('Product Image')
+                    ->disk('public')
+                    ->directory('products')
+                    ->visibility('public')
+                    ->image()
+                    ->previewable(false)     
+                    ->openable(false)        
+                    ->downloadable(false)   
+                    ->maxSize(2048)
+                    ->required()
 
             ]);
     }
