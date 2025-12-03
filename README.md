@@ -72,7 +72,7 @@ npm run dev
 cp .env.example .env
 ```
 
-### 4️⃣ Generate App Key/
+### 4️⃣ Generate App Key
 ```bash
 php artisan key:generate
 ```
