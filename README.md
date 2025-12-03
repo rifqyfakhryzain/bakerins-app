@@ -96,4 +96,6 @@ php artisan serve
 ```
 
 ### Akses aplikasi:
+```bash
 http://127.0.0.1:8000
+```
