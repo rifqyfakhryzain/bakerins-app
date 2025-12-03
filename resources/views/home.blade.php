@@ -77,7 +77,7 @@
                     <div class="text-4xl mb-4">⚡</div>
                     <h3 class="text-xl font-bold mb-2">Produksi Rumahan</h3>
                     <p class="text-gray-600 text-sm">
-                        Diproduksi langsung di rumah dengan standar kebersihan dan kualitas terjaga.
+                        Diproduksi langsung dari dapur rumahan Bakerins.
 
                     </p>
                 </div>

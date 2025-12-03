@@ -21,27 +21,53 @@
     </div>
 
     <!-- Menu Desktop -->
-    <div class="hidden md:flex items-center gap-8 font-medium">
-      <a href="/" class="hover:text-orange-600">Home</a>
-      <a href="/products" class="hover:text-orange-600">Produk</a>
-      <a href="/login" class="hover:text-orange-600">Login</a>
+<div class="hidden md:flex items-center gap-8 font-medium">
+  
+  <a href="/"
+     class="{{ request()->is('/') ? 'text-orange-600 font-bold' : 'hover:text-orange-600' }}">
+     Home
+  </a>
 
-      <a href="/products" 
-         class="bg-orange-500 text-white px-5 py-2 rounded-full hover:bg-orange-600 transition">
-         Belanja
-      </a>
-    </div>
+  <a href="/products"
+     class="{{ request()->is('products') ? 'text-orange-600 font-bold' : 'hover:text-orange-600' }}">
+     Produk
+  </a>
+
+  <a href="/login"
+     class="{{ request()->is('login') ? 'text-orange-600 font-bold' : 'hover:text-orange-600' }}">
+     Login
+  </a>
+
+  <a href="/products" 
+     class="bg-orange-500 text-white px-5 py-2 rounded-full hover:bg-orange-600 transition">
+     Belanja
+  </a>
+</div>
+
 
     <!-- Mobile Button -->
     <button id="menuBtn" class="md:hidden text-2xl">☰</button>
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
-    <a href="/" class="block px-6 py-4">Home</a>
-    <a href="/products" class="block px-6 py-4">Produk</a>
-    <a href="/login" class="block px-6 py-4">Login</a>
-  </div>
+<div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+
+  <a href="/" 
+     class="block px-6 py-4 {{ request()->is('/') ? 'bg-orange-50 text-orange-600 font-bold' : '' }}">
+     Home
+  </a>
+
+  <a href="/products" 
+     class="block px-6 py-4 {{ request()->is('products') ? 'bg-orange-50 text-orange-600 font-bold' : '' }}">
+     Produk
+  </a>
+
+  <a href="/login" 
+     class="block px-6 py-4 {{ request()->is('login') ? 'bg-orange-50 text-orange-600 font-bold' : '' }}">
+     Login
+  </a>
+
+</div>
 </nav>
 
 <!-- Isi Halaman -->
