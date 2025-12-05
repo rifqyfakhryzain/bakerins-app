@@ -35,12 +35,15 @@ class ProductsTable
                     ->label('Description')
                     ->limit(50),
 
-                ImageColumn::make('image')
-                    ->label('Image')
-                    ->disk('public')
-                    ->visibility('public')
-                    ->height(60)
-                    ->square()
+ImageColumn::make('image')
+    ->label('Image')
+    ->getStateUsing(fn ($record) => 
+        $record->image ? asset('storage/' . $record->image) : null
+    )
+    ->height(60)
+    ->square()
+
+
 
 
 

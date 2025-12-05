@@ -6,7 +6,7 @@
         <div class="w-full">
             <div class="max-w-7xl mx-auto px-6 md:px-20 py-24 grid md:grid-cols-2 gap-14 items-center">
 
-                <!-- TEXT -->
+                <!-- Text -->
                 <div>
                     <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
                         Manis, Segar, dan Lembut
