@@ -40,9 +40,16 @@ ImageColumn::make('image')
     ->getStateUsing(fn ($record) => 
         $record->image ? asset('storage/' . $record->image) : null
     )
+    ->url(fn ($record) => 
+        $record->image ? asset('storage/' . $record->image) : null
+    )
+    ->openUrlInNewTab() // ✅ Buka di tab baru
     ->height(60)
     ->square()
 
+
+
+    
 
 
 
