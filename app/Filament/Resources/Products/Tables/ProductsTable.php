@@ -43,7 +43,7 @@ ImageColumn::make('image')
     ->url(fn ($record) => 
         $record->image ? asset('storage/' . $record->image) : null
     )
-    ->openUrlInNewTab() // ✅ Buka di tab baru
+    ->openUrlInNewTab() 
     ->height(60)
     ->square()
 
