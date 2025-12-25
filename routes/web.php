@@ -12,3 +12,5 @@ Route::get('/tes', function () {
 });
 
 Route::get('/products', [ProductController::class, 'index']);
+Route::get('/products/{product}', [ProductController::class,'show'])
+    ->name('products.show');
