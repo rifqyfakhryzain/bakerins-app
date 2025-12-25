@@ -42,10 +42,11 @@
                                     Rp {{ number_format($product->price, 0, ',', '.') }}
                                 </span>
 
-                                <button
+                                <a href="{{ route('products.show', $product) }}"
                                     class="bg-orange-500 text-white text-sm px-4 py-2 rounded-full hover:bg-orange-600 transition">
                                     Beli
-                                </button>
+                                </a>
+
                             </div>
                         </div>
 
