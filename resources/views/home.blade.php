@@ -167,7 +167,11 @@
             <div>
                 <h4 class="font-bold text-white mb-3">Kontak</h4>
                 <p class="text-sm">support@bakerins.com</p>
-                <p class="text-sm">+62 812-xxxx-xxxx</p>
+                    <a href="{{ 'https://wa.me/6282115842517' }}"
+       target="_blank"
+       class="block text-sm text-gray-300 hover:text-white transition mt-1">
+        +62 821-1584-2517
+    </a>
             </div>
 
         </div>
