@@ -170,7 +170,7 @@
                     <a href="{{ 'https://wa.me/6282115842517' }}"
        target="_blank"
        class="block text-sm text-gray-300 hover:text-white transition mt-1">
-        +62 82
+        +62 8
     </a>
             </div>
 
